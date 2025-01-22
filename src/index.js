@@ -1,3 +1,6 @@
 import "./styles.css";
+import submitForm from "./submitForm.js";
 
-console.log(`Hello, World!`);
+// const submitBtn = document.querySelector("#submit");
+
+// submitBtn.addEventListener("click",(e) => submitForm(e));
