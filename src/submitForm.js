@@ -1,17 +1,17 @@
 export default function submitForm(e) {
 
   e.preventDefault();
+
   const nameValue = document.querySelector("#fname").value;
-  const ageValue = document.querySelector("#age").value;
-  const careerValue = document.querySelector("#career").value;
+  const userValue = document.querySelector("#username").value;
+  const emailValue = document.querySelector("#email").value;
+  const phoneValue = document.querySelector("#phone-number").value;
+  const genderValue = document.querySelector(`input[name="gender"]:checked`).value;
 
-  let userDataField = [nameValue, ageValue, careerValue];
-
-  for (const userData of userDataField) {
-    const outputField = document.querySelector("#output");
-    const p = document.createElement("p");
-    p.innerText = userData;
-
-    outputField.appendChild(p);
-  }
+  alert(`Real Name: ${nameValue}
+    \nUsername: ${userValue}
+    \nEmail: ${emailValue}
+    \nPhone Number: ${phoneValue}
+    \nGender: ${genderValue}`
+  );
 }

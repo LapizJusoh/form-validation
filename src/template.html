@@ -16,23 +16,42 @@
             <!-- Input for Full Name -->
             <div class="input-box">
               <span class="details">Full Name</span>
-              <input type="text" placeholder="Enter your name" required />
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="Enter your name"
+                required
+              />
             </div>
             <!-- Input for Userame -->
             <div class="input-box">
               <span class="details">Username</span>
-              <input type="text" placeholder="Enter your username" required />
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter your username"
+                required
+              />
             </div>
             <!-- Input for Email -->
             <div class="input-box">
-              <span class="details">Email</span>
-              <input type="text" placeholder="Enter your email" required />
+              <span class="details">Email (@google.com only)</span>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+              />
             </div>
             <!-- Input for Phone Number -->
             <div class="input-box">
               <span class="details">Phone Number</span>
               <input
                 type="text"
+                name="phone-number"
+                id="phone-number"
                 placeholder="Enter your phone number"
                 required
               />
@@ -40,7 +59,13 @@
             <!-- Input for Password -->
             <div class="input-box">
               <span class="details">Password</span>
-              <input type="text" placeholder="Enter your password" required />
+              <input
+                type="text"
+                name="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+              />
             </div>
             <!-- Input for Confirm Password -->
             <div class="input-box">
@@ -48,14 +73,16 @@
               <input
                 type="text"
                 placeholder="Enter your password again"
+                name="confirm-password"
+                id="confirm-password"
                 required
               />
             </div>
           </div>
           <div class="gender-details">
-            <input type="radio" name="gender" id="dot-1"/>
-            <input type="radio" name="gender" id="dot-2"/>
-            <input type="radio" name="gender" id="dot-3"/>
+            <input type="radio" name="gender" id="dot-1" value="male" />
+            <input type="radio" name="gender" id="dot-2" value="female" />
+            <input type="radio" name="gender" id="dot-3" value="unspecified" />
             <span class="gender-title">Gender</span>
             <div class="category">
               <label for="dot-1">
